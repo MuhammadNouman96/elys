@@ -1,0 +1,712 @@
+@font-face {
+    src: url(../fonts/Cabin-Regular.ttf);
+    font-family: cabin;
+  }
+body{
+    background-color: #E5E5E5;
+    font-family: cabin;
+}
+/*NAVBAR STARTS*/
+.navbar-brand .navbar-logo{
+    position: absolute;
+    width: 99.91px;
+    height: 35.94px;
+    top: 10px;
+}
+.navbar-owner{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.navbar{
+    width: 100%;
+}
+.navbar-line{
+    background-color: black;
+    width: 2px;
+    height: 55px;
+    position: absolute;
+    right: 98px;
+    top: 0;
+    margin: auto 5px;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.menu-img{
+    width: 35px;
+}
+.navbar-collapse .navbar-nav .nav-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    text-transform: capitalize;
+    margin-right: 23px;
+}
+.navbar-collapse .navbar-nav .nav-item:hover{
+    transition: .5s;
+    opacity: 0.7;
+}
+.collapse button{
+    height: 40px;
+}
+/*NAVBAR ENDS*/
+/*HEAD AREA START*/
+.jobs-head-bg{
+    width:100%;
+    z-index: -100;
+    background-color:#19A5D3;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cus-heading h1{
+    position: relative;
+    z-index: 1000;
+    color:#FFFFFF;
+    margin-top: 200px;
+}
+
+.jobs-head-bg::before{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 532px;
+    height: 214px;
+    z-index: -1;
+    content: "";
+    background-image: url("../imgs/Background shape.png");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.jobs-head-bg::after{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 316px;
+    height: 316px;
+    z-index: -100;
+    content: "";
+    background-image: url("../imgs/Frame.png");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+/*HEAD AREA END*/
+
+/*COMPANY LOCATION AREA START*/
+.company-head-outter{
+    margin: 100px auto 50px auto;
+}
+.company-head-outter .company-info{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+.location{
+    position: absolute;
+    top: 18px;
+    left: 140px;
+    padding-left: 14px;
+}
+.location::before{
+    content: "";
+    width: 2px;
+    height: 25px;
+    background-color: rgba(52, 73, 94, 0.5);;
+    position: absolute;
+    top: -4px;
+    left: -22px;
+    margin-left: 20px;
+}
+.location img{
+    vertical-align: baseline;
+}
+.company-logo .company-name{
+    margin-left: 15px;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    color: #707070;
+    text-transform: uppercase;
+}
+.location .area{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #707070;
+}
+/*COMPANY LOCATION AREA END*/
+/*ADULT ANALYSIS*/
+.adult-analysis2{
+    background-image: url("../imgs/adults-analysis2.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 70%;
+    height: 450px;
+    margin-top: 55px;
+    margin-bottom: 54px;
+    width: 100%;
+}
+
+/*COMPANY INFO AREA START*/
+.about-area{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 110px;
+}
+.about-text-area{
+    width: 70%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.about-text-area .about-heading{
+    margin-bottom: 20px;
+}
+.about-text-area .about-heading h1{
+    font-family: Cabin;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: #08368E;
+}
+.about-text-area .about-paras {
+    box-sizing: border-box;
+    width: 100%;
+}
+.about-paras p{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #707070;
+}
+/*SUMMARY AREA*/
+.summary-outter{
+    width: 30%;
+    margin-left:100px;
+    display: flex;
+    flex-direction: column;
+}
+.summary-area{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 100%;
+}
+.summary-inner{
+    margin: 19px auto 40px 30px;
+}
+.summary-area .summary-head{
+    margin-bottom: 40px;
+}
+.summary-area .summary-head h1{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: #08368E;
+}
+.summary-inner .job-info{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.summary-inner .job-info h1{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #707070;
+    text-transform: capitalize;
+}
+.summary-inner .job-info span{
+    font-family: Cabin;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #707070;
+    text-transform: capitalize;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+.date{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.date h1{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #707070; 
+    text-transform: capitalize;
+}
+.date span{
+    font-family: Cabin;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #707070;
+    text-transform: capitalize;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+
+/*COMPANY INFO AREA END*/
+
+
+/* NEWS LETTER START*/
+.newsltrr-color{
+    background-image: linear-gradient(rgba(25, 165, 211, 0.7), rgba(25, 165, 211, 0.7)), url("../imgs/Rectangle 20.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    padding: 90px 0px;
+    width: 100%;
+    position: relative;
+}
+.news-ltr-img{
+    position: absolute;
+    left: 0px;
+    top: -398px;
+    z-index:-1;
+}
+.news-ltr-inner{
+    font-family: cabin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.news-ltr-inner .newsltr-heading{
+    font-size: 50px;
+    color: #ECF0F1;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}.news-ltr-inner .newsltr-para{
+    font-size: 20px;
+    color: #ECF0F1;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+.newsletter-input-outter .news-ltr-input{
+    height: 50px;
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border:0px;
+}
+.newsletter-input-outter .nuwltr-input-btn{
+    background-color: #00044A;
+    font-size: 16px;
+    color: #ECF0F1;
+    height: 50px;
+    width: 170px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    border: 0px;
+    margin-left: 20px;
+}
+.newsletter-input-outter input[type=text]{
+    padding-left: 20px;
+    font-family:cabin
+}
+.newsletter-input-outter .nuwltr-input-btn:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    font-size: 20px;
+}
+/* NEWS LETTER ENDS*/
+
+/*FOOTER AREA STARTS*/
+.footer-bg{
+    background-color: #707070;
+    position: absolute;
+}
+.footer-inner{
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section1 .footer-logo{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 35px;
+}
+.footer-section1 .footer-logo-text{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+}
+.footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.footer-section2 .foot-heading, .footer-section3 .foot-heading, .footer-section4 .foot-heading, .footer-section5 .foot-heading{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}  
+.foot-link{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 13px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+.foot-link:hover{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.6);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.foot-input{
+margin-top:10px;
+}
+.foot-input .input-group-text{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0px;
+}
+.foot-input .input-txt{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    border: 0px;
+}
+.foot-input .input-txt:hover{
+    cursor: pointer;
+}
+.copyright-text{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.copyright-text .copyright{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: capitalize;
+}
+
+
+
+
+/* MEDIA QUEERRY STAR*/
+@media only screen and (min-width: 200px) and (max-width: 630px){
+    .jobs-head-bg::before{
+        background-image: url("../imgs/background shape4.png");
+        width: 373px;
+    }
+    .jobs-head-bg::after{
+        display: none;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 400px){
+    .jobs-head-bg::before{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 579px) and (max-width: 767px){
+    .cus-heading h1{
+        font-size: 40px;
+    }
+    .jobs-heading h2{
+        font-size: 45px;
+    }
+    .form-heading h2{
+        font-size: 23px;
+    }
+    .cmpny-logo p{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 580px){
+    .cus-heading h1{
+        font-size: 35px;
+    }
+    .jobs-heading{
+        left: -4px;
+    }
+    .jobs-heading h2{
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 479px){
+    .cus-heading h1{
+        font-size: 28px;
+    }
+    .jobs-heading{
+        left: -4px;
+    }
+    .jobs-heading h2{
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 375px){
+    .cus-heading h1{
+        font-size: 23px;
+    }
+    .jobs-heading{
+        left: -4px;
+    }
+    .jobs-heading h2{
+        padding-top: 20px;
+        font-size: 35px;
+    }
+    .form-heading h2{
+        font-size: 20px;
+    }
+    .cmpny-logo p{
+        font-size: 16px;
+    }
+}   
+@media only screen and (min-width: 398px) and (max-width: 437px){
+    .jobs-heading h2{
+        font-size: 35px;
+        padding-top: 25px;
+    }  
+}
+@media only screen and (min-width: 200px) and (max-width: 397px){
+    .jobs-heading h2{
+        font-size: 32px;
+        padding-top: 25px;
+    }  
+}
+@media only screen and (min-width: 200px) and (max-width: 357px){
+    .jobs-heading h2{
+        font-size: 32px;
+        padding-top: 25px;
+    }  
+}
+@media only screen and (min-width: 200px) and (max-width: 992px){
+    .navbar-line{
+        display: none;
+    }
+    .navbar-collapse button{
+        margin-top: 5px;
+    }
+    .navbar-collapse .navbar-nav .nav-item{
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 1268px) and (min-width: 985px){
+    .news-ltr-inner{
+        width: 64%;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 984px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 44px;
+    }
+    .news-ltr-inner{
+        width: 64%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 797px) and (max-width: 899px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 40px;
+    }
+    .news-ltr-inner{
+        width: 64%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 685px) and (max-width: 796px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 34px;
+    }
+    .news-ltr-inner{
+        width: 64%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 438px) and (max-width: 684px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 34px;
+    }
+    .news-ltr-inner{
+        width: 100%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 437px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 30px;
+    }
+    .news-ltr-inner{
+        width: 100%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 10px;
+    }
+    .newsletter-input-outter{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-input-outter .news-ltr-input, .nuwltr-input-btn{
+        width: 100%;
+        margin: 0px;
+    }
+    .newsletter-input-outter .nuwltr-input-btn{
+        width: 100%;
+        margin: 0px;
+        margin-top: 5px;
+    }
+    
+}
+@media only screen and (min-width: 200px) and (max-width: 389px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 24px;
+    }
+    .news-ltr-inner{
+        width: 100%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 10px;
+    }
+    .newsletter-input-outter{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-input-outter .news-ltr-input, .nuwltr-input-btn{
+        width: 100%;
+        margin: 0px;
+    }
+    .newsletter-input-outter .nuwltr-input-btn{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 990px){
+    .navbar-collapse button{
+        margin-top: 5px;
+    }
+}
+@media only screen and (min-width: 579px) and (max-width: 767px){
+    .cmpny-logo p{
+        font-size: 17px;
+    }
+    .adult-analysis2{
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 375px){
+    .form-heading h2{
+        font-size: 20px;
+    }
+    .cmpny-logo p{
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 990px){
+    .about-area{
+        flex-direction: column;
+    }
+    .about-text-area{
+        width: 95%;
+    }
+    .summary-outter{
+        width: 95%;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .summary-area{
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 360px){
+    
+    .developer .txt-img h2{
+        font-size: 16px;
+    }
+    .about-paras p{
+        font-size: 16px;
+    }
+    .about-text-area .about-heading h1{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 682px){
+    .adult-analysis2{
+        height: 250px;
+    }
+    
+}
+@media only screen and (min-width: 200px) and (max-width: 368px){
+    .developer .txt-img{
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (min-width: 200px) and (max-width: 425px){
+    .adult-analysis2{
+        height: 180px;
+    }
+    .developer .txt-img .heart-img img{
+        bottom: -36px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 1157px){
+    .footer-section2{
+        margin-left: 30px;
+    }
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+        width: 19%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .footer-inner{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .foot-input{
+        width: 50%;
+    }
+}

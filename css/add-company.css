@@ -1,0 +1,585 @@
+@font-face {
+    src: url(../fonts/Cabin-Regular.ttf);
+    font-family: cabin;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #E5E5E5;
+    font-family: cabin;
+
+}
+/*NAVBAR STARTS*/
+.cus-head-pad{
+    padding: 8px 0px;
+}
+.navbar-brand .navbar-logo{
+    position: absolute;
+    width: 99.91px;
+    height: 35.94px;
+    top: 10px;
+}
+.navbar{
+    width: 100%;
+    padding: 8px 0px;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.menu-img{
+    width: 35px;
+}
+.navbar-collapse .navbar-nav .nav-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    text-transform: capitalize;
+    margin-right: 23px;
+}
+.navbar-collapse .navbar-nav .nav-item:hover{
+    transition: .5s;
+    opacity: 0.7;
+}
+.collapse button{
+    height: 40px;
+}
+/*NAVBAR ENDS*/
+/*HEAD AREA START*/
+.jobs-head-bg{
+    width:100%;
+    z-index: -100;
+    background-color:#19A5D3;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cus-heading h1{
+    position: relative;
+    z-index: 1000;
+    color:#FFFFFF;
+    margin-top: 200px;
+}
+
+.jobs-head-bg::before{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 532px;
+    height: 214px;
+    z-index: -1;
+    content: "";
+    background-image: url("../imgs/Background shape.png");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.jobs-head-bg::after{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 316px;
+    height: 316px;
+    z-index: -100;
+    content: "";
+    background-image: url("../imgs/Frame.png");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+/*HEAD AREA END*/
+
+/* FORM-HEADING START */
+.heading-margin{
+    margin: 90px auto 70px auto;
+}
+.cus-form-heading{
+    padding: 0px;   
+}
+.cus-form-heading h1{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    letter-spacing: 0.03em;
+    color: #707070;
+}
+/* FORM-HEADING END */
+/*cmpny-logo area start*/
+.form-margin{
+    padding: 0px;
+    margin-bottom: 100px;
+}
+.form-heading h2{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: #08368E;
+    text-transform: capitalize;
+}
+.cus-form{
+    margin: 0px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 0.5px solid #08368E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 40px ;
+}
+hr{
+    width: 40%;
+    margin-top: 12px;
+}
+.cmpny-logo{
+    margin-bottom: 58px;
+}
+.cmpny-logo p{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #707070;
+    text-transform: capitalize;
+    margin: 50px auto 20px auto;
+}
+.cmpny-logo input[type="file"]{
+    display: none;
+}
+.cmpny-logo label{
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+    background-color: #00044A;
+    border-radius: 4px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+/*cmpny-logo area end*/
+
+/*FORM-INNER SECTION START*/
+form{
+    width: 100%;
+}
+.cus-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cus-input input:nth-child(2){
+    margin-left: 30px;
+}
+
+form input[type="text"]{
+    height: 60px;
+    border: 0.75px solid rgba(8, 54, 142, 0.8);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 18px;
+    color: #C4C4C4;
+}
+form input[type="email"]{
+    height: 60px;
+    border: 0.75px solid rgba(8, 54, 142, 0.8);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 18px;
+    color: #C4C4C4;
+}
+::-webkit-input-placeholder{
+    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 0.03em ;
+    color: #C4C4C4 !important;
+}
+:focus::-webkit-input-placeholder{
+    opacity:0.5;
+}
+.txt-area{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.txt-area textarea{
+    border: 0.75px solid rgba(8, 54, 142, 0.8);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 18px;
+    color: #C4C4C4;
+    width: 100%;
+    padding: 20px;
+}.submit-btn {
+    text-align: center;
+    margin: 115px auto 80px auto;
+}
+.submit-btn input[type="submit"]{
+    background-color: #19A5D3;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 15px 80px;
+}
+.submit-btn input{
+    position: relative;
+}
+/*FORM-INNER SECTION END*/
+/* NEWS LETTER START*/
+.newsltrr-color{
+    background-image: linear-gradient(rgba(25, 165, 211, 0.7), rgba(25, 165, 211, 0.7)), url("../imgs/Rectangle 20.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    padding: 90px 0px;
+    width: 100%;
+    position: relative;
+}
+.news-ltr-img{
+    position: absolute;
+    left: 0px;
+    top: -398px;
+    z-index:-1;
+}
+.news-ltr-inner{
+    font-family: cabin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.news-ltr-inner .newsltr-heading{
+    font-size: 50px;
+    color: #ECF0F1;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}.news-ltr-inner .newsltr-para{
+    font-size: 20px;
+    color: #ECF0F1;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+.newsletter-input-outter .news-ltr-input{
+    height: 50px;
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border:0px;
+}
+.newsletter-input-outter .nuwltr-input-btn{
+    background-color: #00044A;
+    font-size: 16px;
+    color: #ECF0F1;
+    height: 50px;
+    width: 170px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    border: 0px;
+    margin-left: 20px;
+}
+.newsletter-input-outter input[type=text]{
+    padding-left: 20px;
+    font-family:cabin
+}
+.newsletter-input-outter .nuwltr-input-btn:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    font-size: 20px;
+}
+/* NEWS LETTER ENDS*/
+
+/*FOOTER AREA STARTS*/
+.footer-bg{
+    background-color: #707070;
+    position: absolute;
+}
+.footer-inner{
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section1 .footer-logo{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 35px;
+}
+.footer-section1 .footer-logo-text{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+}
+.footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.footer-section2 .foot-heading, .footer-section3 .foot-heading, .footer-section4 .foot-heading, .footer-section5 .foot-heading{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}  
+.foot-link{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 13px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+.foot-link:hover{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.6);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.foot-input{
+margin-top:10px;
+}
+.foot-input .input-group-text{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0px;
+}
+.foot-input .input-txt{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    border: 0px;
+}
+.foot-input .input-txt:hover{
+    cursor: pointer;
+}
+.copyright-text{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.copyright-text .copyright{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+/* MEDIA QUEERIES START*/
+@media only screen and (min-width: 200px) and (max-width: 630px){
+    .jobs-head-bg::before{
+        background-image: url("../imgs/background shape4.png");
+        width: 373px;
+    }
+    .jobs-head-bg::after{
+        display: none;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 400px){
+    .jobs-head-bg::before{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1268px) and (min-width: 985px){
+    .news-ltr-inner{
+        width: 64%;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 984px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 44px;
+    }
+    .news-ltr-inner{
+        width: 64%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 797px) and (max-width: 899px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 40px;
+    }
+    .news-ltr-inner{
+        width: 64%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 685px) and (max-width: 796px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 34px;
+    }
+    .news-ltr-inner{
+        width: 64%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 438px) and (max-width: 684px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 34px;
+    }
+    .news-ltr-inner{
+        width: 100%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 437px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 30px;
+    }
+    .news-ltr-inner{
+        width: 100%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 10px;
+    }
+    .newsletter-input-outter{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-input-outter .news-ltr-input, .nuwltr-input-btn{
+        width: 100%;
+        margin: 0px;
+    }
+    .newsletter-input-outter .nuwltr-input-btn{
+        width: 100%;
+        margin: 0px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 389px){
+    .news-ltr-inner .newsltr-heading{
+        font-size: 24px;
+    }
+    .news-ltr-inner{
+        width: 100%;
+    }
+    .news-ltr-inner .newsltr-para{
+        font-size: 10px;
+    }
+    .newsletter-input-outter{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-input-outter .news-ltr-input, .nuwltr-input-btn{
+        width: 100%;
+        margin: 0px;
+    }
+    .newsletter-input-outter .nuwltr-input-btn{
+        width: 100%;
+        margin: 0px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 990px){
+    .navbar-collapse button{
+        margin-top: 5px;
+    }
+}
+@media only screen and (min-width: 579px) and (max-width: 767px){
+    .cus-heading h1{
+        font-size: 40px;
+    }
+    .jobs-heading h2{
+        font-size: 40px;
+    }
+    .form-heading h2{
+        font-size: 23px;
+    }
+    .cmpny-logo p{
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 580px){
+    .cus-heading h1{
+        font-size: 35px;
+    }
+    .jobs-heading{
+        left: -4px;
+    }
+    .jobs-heading h2{
+        font-size: 38px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 479px){
+    .cus-heading h1{
+        font-size: 28px;
+    }
+    .jobs-heading{
+        left: -4px;
+    }
+    .jobs-heading h2{
+        font-size: 35px;
+        padding-top: 25px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 375px){
+    .cus-heading h1{
+        font-size: 23px;
+    }
+    .jobs-heading{
+        left: -4px;
+    }
+    .jobs-heading h2{
+        padding-top: 25px;
+        font-size: 40px;
+    }
+    .form-heading h2{
+        font-size: 20px;
+    }
+    .cmpny-logo p{
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 457px){
+    .cus-input input:nth-child(2){
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .cus-input{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 1157px){
+    .footer-section2{
+        margin-left: 30px;
+    }
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+        width: 19%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .footer-inner{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .foot-input{
+        width: 50%;
+    }
+}
